@@ -3,16 +3,14 @@
 using namespace std;
 
 int computeMe(int nn) {
-    if (nn==0)
-        return 1;
-    if (nn==1)
-        return 2;
+    if (nn==0 || nn==1)
+			return 2;
     else
-        return (2*computeMe(nn-1)+computeMe(nn-2))%1000;
+			return (2*computeMe(nn-1)+computeMe(nn-2))%1000;
 }
 
 int main() {
-    int param;
-    cin >> param;
-    cout << computeMe(param) << endl;
+	int param;
+	cin >> param;
+	cout << computeMe(param) << endl;
 }
