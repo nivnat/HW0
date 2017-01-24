@@ -8,7 +8,7 @@ int computeMe(int nn) {
     if (nn==1)
         return 2;
     else
-        return (2*computeMe(nn-1)+computeMe(nn-2))%1000;
+        return (2*computeMe(nn-1)+computeMe(nn-2))%999;
 }
 
 int main() {
